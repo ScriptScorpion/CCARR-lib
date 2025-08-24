@@ -1,5 +1,8 @@
 # Notice! that this library is in beta testing many features are not fully stable.
 
+**How-to-use**:
+1. include "ccarr.hpp" file into your code, like so `#include "ccarr.hpp"`
+
 **Commands**:
 
 assuming you have array like `char test[] = "abcd";`
