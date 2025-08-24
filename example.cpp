@@ -9,7 +9,7 @@ int main() {
     char arr[size] = {'a', 'b', 'c', 'd'};
     push_front(arr, std::string("w")); // passed checks!
     std::cout << arr << std::endl; // passed checks!
-    push_back(arr, std::string("we")); // not passed all checks
+    push_back(arr, std::string("w")); // not passed all checks
     std::cout << arr << std::endl; // not passed all checks
     push_front(arr, 'w'); // passed checks!
     std::cout << arr << std::endl; // passed checks!
