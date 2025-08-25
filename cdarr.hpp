@@ -2,12 +2,9 @@
      NOTICE:
           Library for dynamic arrays not fully done and tested, use it on your own risk
 */
-
-
 #pragma once
 
 #include <iostream> // for output
-#include <cctype> // for checking type
 #include <algorithm> // for std::copy
 
 template <typename T>
