@@ -17,3 +17,6 @@ for dynamic arrays, like `char *arr = new char[] {'a', 'b', 'c', 'd', '\0'};`
 1. `push_front_d(arr, char)` command pushes 'char' into beginning of dynamic array (char - it is one character of ASCII)
 2. `push_back_d(arr, char)` command pushes 'char' into end of dynamic array (char - it is one character of ASCII)
 3. `clear_d` command will remove all elements from dynamic array
+
+**TO-DO**:
+* Add support for C language (`.c` files)
