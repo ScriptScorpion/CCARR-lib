@@ -12,7 +12,7 @@ inline void clear(T (&arr)[S]) {
 
 
 template <size_t S, typename T>
-inline void push_front(T (&arr)[S], T what_push) {
+inline void push_front(T (&arr)[S], const T what_push) {
     // (sizeof(arr) / sizeof(*arr)) - can do same as S
     char new_arr[S + 1]{}; // 1 - cuz new null terminator(new terminator gets replaced with character, and we put null terminator at the end)
     int count = S - 1; // for counting last values of array, -1 because arrays starts with 0
@@ -40,7 +40,7 @@ inline void push_front(T (&arr)[S], T what_push) {
 }
 
 template <size_t S>
-inline void push_front(char (&arr)[S], std::string what_push) {
+inline void push_front(char (&arr)[S], const std::string what_push) {
     // (sizeof(arr) / sizeof(*arr)) - can do same as S
     char new_arr[S]{}; 
     int cursor = 0; // for counting position needed to input
@@ -72,7 +72,7 @@ inline void push_front(char (&arr)[S], std::string what_push) {
 }
 
 template <size_t S>
-inline void push_back(char (&arr)[S], std::string what_push) {
+inline void push_back(char (&arr)[S], const std::string what_push) {
     // (sizeof(arr) / sizeof(*arr)) - can do same as S
     int cursor = S; // for counting position needed to input
     char new_arr[S]{}; 
@@ -107,7 +107,7 @@ inline void push_back(char (&arr)[S], std::string what_push) {
 }
 
 template <size_t S, typename T>
-inline void push_back(T (&arr)[S], T what_push) {
+inline void push_back(T (&arr)[S], const T what_push) {
     // (sizeof(arr) / sizeof(*arr)) - can do same as S
     int cursor = S;
     int real_size = 0;
