@@ -1,5 +1,4 @@
 #pragma once
-
 #include <algorithm> // for std::copy
 
 template <typename T>
@@ -10,7 +9,7 @@ inline void clear_d(T *arr) {
 }
 
 
-inline void push_back_d(char *arr, char what_push) {
+inline void push_back_d(char *arr, const char what_push) {
      // (sizeof(arr) / sizeof(*arr)) - can do same as S
      int real_size = 0;
      
@@ -36,7 +35,7 @@ inline void push_back_d(char *arr, char what_push) {
      std::copy(new_arr, new_arr + (real_size + 1), arr); // NOTICE THIS OPERATION IS FOR ARRAY THAT ARE HAVE ENOUGH SPACE FOR EXTRA VALUES
 }
 
-inline void push_front_d(char *arr, char what_push) {
+inline void push_front_d(char *arr, const char what_push) {
      // (sizeof(arr) / sizeof(*arr)) - can do same as S
      int real_size = 0;
      for (int j = 0; (unsigned int)arr[j] != '\0'; ++j) {
